@@ -1,0 +1,6 @@
+[submodule "jquery/jquery-boilerplate"]
+	path = jquery/jquery-boilerplate
+	url = git://github.com/zenorocha/jquery-boilerplate.git
+[submodule "node/node-boilerplate"]
+	path = node/node-boilerplate
+	url = git://github.com/robrighter/node-boilerplate.git

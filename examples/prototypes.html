@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>prototypes</title>
+	</head>
+	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="prototypes.js"></script>
+		<script>
+			$(function () {
+				// Now let's make some devs
+				var jordan = new Developer({ name: 'Jordan', yearsExp: 9999, IDE: 'vim' });
+				var jeff   = new Developer({ name: 'Jeff', yearsExp: 0.0001, IDE: 'eclipse' });
+
+				jordan.makeCode();
+				jeff.makeCode();
+
+				jordan.argueAboutIDE();
+				jeff.argueAboutIDE();
+
+				console.log('Do they have the same prototype?', jordan.prototype === jeff.prototype);
+				console.log('Static method: how many developers?', Developer.howMany());
+				console.log('Static method: give me all of them!', Developer.get());
+				console.log('Static method: now just Jeff', Developer.get('Jeff'));
+			});
+		</script>
+	</body>
+</html>
